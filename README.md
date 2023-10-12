@@ -3,6 +3,20 @@
 Documents to help guide the world through MySQL 5.7 End of life, particularly those on a managed service, such as Amazon RDS and Google Cloud SQL.    
 We are not looking to reproduce technical documentation, but rather supplement and aggregate documentation to help create an actionable and successful plan.
 
+---
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg    
+
+---
+
 ## What is happening?
 
 The MySQL community is planning to [deprecate MySQL 5.7 after October 31, 2023](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf).     
