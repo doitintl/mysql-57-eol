@@ -3,17 +3,18 @@ This document will help make sure that proper conversations, planning, and testi
 
 ## Initial requirements, impact assessment and planning
 Properly planning a major RDBMS upgrade requires an understanding of both the technical and business requirements.   
-There are potential blockers that can come up, so identifying them early is key to properly executing an upgrade on time.    
+There are potential blockers and critical issues that can crop up, so identifying them early is key to properly executing an upgrade on time.    
 
-- [ ] ***Business***
-  - [ ] Define the **"business owner"** of the migration
+### Business
+  - [ ] Define the [Business owner](glossary.md#business-owner) of the migration
     - [ ] Define success criteria
-  - [ ] Identify UAT resources
+  - [ ] Identify [UAT](glossary.md#user-acceptance-testing) resources
   - [ ] Define a roadmap for migration milestones 
-  - [ ] Validate RTO/RPO/SLA/SLO requirements for application
+  - [ ] Validate [RTO](glossary.md#recovery-time-objective)/[RPO](glossary.md#recovery-point-objective)/SLA/SLO requirements for application
     - [ ] Define fail-back criteria/decision point
   - [ ] Cost planning for additional resources during migration
-- [ ] ***Technical***
+
+### Technical
   - [ ] Define the **"technical owner"** of the migration
   - [ ] Identify development and testing resources
   - [ ] Determine In-Place or parallel upgrade approach
@@ -29,3 +30,21 @@ There are potential blockers that can come up, so identifying them early is key 
   - [ ] Identify new service features in the new version that could be useful (backlog it!)
   - [ ] Identify target Infrastructure configuration (instance class)
   - [ ] Estimate Development and testing efforts
+
+## Testing    
+There are different phases and levels of testing performed.    
+Often, the phases are aligned with specific testing environments. (EG: Development, staging, pre-prod, etc...)
+
+### Development and testing
+The development environments are used for smoke and integration testing. Data is generally not representative of Production.   
+Testing here is more for functionality of the individual components of the system.
+  - [ ] Clone Development environment and perform MySQL upgrade
+  - [ ] Perform [Smoke test](glossary.md#smoke-test)
+    - [ ] Document and remediate any issues
+  
+
+### Infrastructure testing
+Infrastructure testing is the process of perfecting the upgrade process. 
+  - [ ] Research and plan out the steps required to implement the upgrade approach [determined previously](#technical)
+  - [ ]  
+    - [ ] 
