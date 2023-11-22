@@ -3,6 +3,9 @@
 Documents to help guide the world through MySQL 5.7 End of life, particularly those on a managed service, such as Amazon RDS and Google Cloud SQL.    
 We are not looking to reproduce technical documentation, but rather supplement and aggregate documentation to help create an actionable and successful plan.
 
+### TL;DR
+[Here's the checklist](docs/migration_checklist.md) to help make sure all bases are covered 
+
 ---
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
@@ -44,4 +47,8 @@ Upgrading to MySQL 8 also gives you the ability to use [Cloud SQL Editions Enter
 
 We ***do not recommend*** waiting for automatic upgrades or deprecation notices.    
 ***Start planning/executing your upgrade now***
+
+## Checklist
+
+Here is [a checklist](docs/migration_checklist.md) that you can use as a starting point to ensure a successful upgrade
 
