@@ -4,7 +4,10 @@ Documents to help guide the world through MySQL 5.7 End of life, particularly th
 We are not looking to reproduce technical documentation, but rather supplement and aggregate documentation to help create an actionable and successful plan.
 
 ### TL;DR
-[Here's the checklist](docs/migration_checklist.md) to help make sure all bases are covered 
+
+DoiT has compiled some resources in order to help our customers plan and execute this major version upgrade successfully.
+- [Mastering EOL Migrations: Lessons learned from MySQL 5.7 to 8.0 with Amazon RDS](https://www.youtube.com/watch?v=WTeOeumDfWw)
+- [MySQL 5.7 End of life major version upgrade checklist](https://github.com/doitintl/mysql-57-eol/blob/main/docs/migration_checklist.md) 
 
 ---
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
@@ -23,17 +26,17 @@ This work is licensed under a
 ## What is happening?
 
 The MySQL community is planning to [deprecate MySQL 5.7 after October 31, 2023](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf).     
-This means that there will be no security patches or bug fixes after this date.
+This means that there will be no security patches or bug fixes after this date.   
+In 2024, Database as a service providers, such as Amazon RDS and Google Cloud SQL will reach critical milestones with respect to the support of this version.   
 
-## Amazon RDS
-If you haven't already upgraded your instance to MySQL 8, [you will be automatically upgraded by the end of March, 2024](https://repost.aws/articles/ARWm1Gv0vJTIKCblhWhPXjWg/announcement-amazon-rds-for-mysql-5-7-will-reach-end-of-standard-support-on-february-29-2024).
+## Amazon RDS MySQL 5.7
+If you haven't already upgraded your instance to MySQL 8, [you will be opted in to Extended Support on February 29, 2024](https://repost.aws/articles/ARHdQg4IelQS2uyXkNrINw-A/announcement-amazon-rds-extended-support-opt-in-behavior-is-changing-upgrade-your-amazon-rds-for-mysql-5-7-database-instances-before-february-29-2024-to-avoid-potential-increase-in-charges).    
+Extended support will incur [additional costs](https://aws.amazon.com/rds/mysql/pricing/#Amazon_RDS_Extended_Support_costs).    
 
-> RDS will upgrade your MySQL 5.7 database to MySQL 8.0 during a scheduled maintenance window 
-> between March 1, 2024 00:00:01 UTC and March 31, 2024 00:00:01 UTC. 
-> On March 31, 2024 00:00:01 AM UTC, any MySQL 5.7 databases that remain 
-> will be automatically upgraded to version 8.0 regardless of instances’ scheduled maintenance window. 
+## Amazon Aurora 2/MySQL 5.7
 
-This goes without saying, but letting AWS automatically upgrading your instances will lead to major problems. 
+If you haven't already upgraded your instance to Aurora 3/MySQL 8, [you will be opted in to Extended Support on October 31, 2024](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/extended-support.html).    
+Extended support will incur [additional costs](https://aws.amazon.com/rds/aurora/pricing/#Amazon_RDS_Extended_Support_costs).   
 
 ## Google Cloud SQL
 There is no officially announced end of support date, which means that it will be at [least 12 months](https://cloud.google.com/sql/docs/mysql/db-versions#major_version_deprecation_plan) from the date of writing this.

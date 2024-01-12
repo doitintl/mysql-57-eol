@@ -9,7 +9,7 @@ There are potential blockers and critical issues that can crop up, so identifyin
   - [ ] Define the [Business owner](glossary.md#business-owner) of the migration
     - [ ] Define success criteria
   - [ ] Identify [UAT](glossary.md#user-acceptance-testing) resources
-  - [ ] Define a roadmap for migration milestones 
+  - [ ] Define a [roadmap](glossary.md#roadmap) for migration milestones
   - [ ] Validate [RTO](glossary.md#recovery-time-objective)/[RPO](glossary.md#recovery-point-objective)/SLA/SLO requirements for application
     - [ ] Define fail-back criteria/decision point
   - [ ] Cost planning for additional resources during migration
@@ -30,6 +30,8 @@ There are potential blockers and critical issues that can crop up, so identifyin
   - [ ] Identify new service features in the new version that could be useful (backlog it!)
   - [ ] Identify target Infrastructure configuration (instance class)
   - [ ] Estimate Development and testing efforts
+  - [ ] Establish a deployment path for critical break-fix changes on 5.7
+    - [ ] Establish a code-freeze date where non-upgrade related development will stop
 
 ## Development and Testing    
 There are different phases of testing performed. Each phase has a specific goal. 
