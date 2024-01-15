@@ -38,6 +38,10 @@ Testing performed by business and technical team in order to validate the system
 From a business perspective: Everything functions as expected
 From a technical perspective: No performance regressions
 
+### Roadmap
+With respect to a database major version upgrade, the roadmap should include dates for the various phases of testing, code-freezes, go/no-go decision points and go-live dates.
+
+
 ### Smoke Testing
 Initial testing performed by the development team and testing teams to make sure the system comes "online"
 
